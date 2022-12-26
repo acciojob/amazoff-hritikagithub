@@ -11,9 +11,24 @@ public class Order {
         //deliveryTime  = HH*60 + MM
     }
 
+    public Order() {
+
+    }
+
     public String getId() {
+
         return id;
     }
 
-    public int getDeliveryTime() {return deliveryTime;}
+    public int getDeliveryTime() {
+        return deliveryTime;
+    }
+
+    public void setId(String id) {
+        this.id = id;
+    }
+
+    public void setDeliveryTime(int deliveryTime) {
+        this.deliveryTime = deliveryTime;
+    }
 }

@@ -1,5 +1,8 @@
 package com.driver;
 
+import org.springframework.stereotype.Component;
+
+@Component
 public class DeliveryPartner {
 
     private String id;
@@ -8,6 +11,10 @@ public class DeliveryPartner {
     public DeliveryPartner(String id) {
         this.id = id;
         this.numberOfOrders = 0;
+    }
+
+    public DeliveryPartner() {
+
     }
 
     public String getId() {
@@ -20,5 +27,9 @@ public class DeliveryPartner {
 
     public void setNumberOfOrders(Integer numberOfOrders) {
         this.numberOfOrders = numberOfOrders;
+    }
+
+    public void setId(String id) {
+        this.id = id;
     }
 }
